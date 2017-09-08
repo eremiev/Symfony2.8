@@ -1,0 +1,6 @@
+blog_homepage:
+    path:     /
+    defaults: { _controller: BlogBundle:Default:index }
+blog_test:
+    path:     /product
+    defaults: { _controller: BlogBundle:Default:create}

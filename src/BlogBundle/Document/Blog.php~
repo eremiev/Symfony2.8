@@ -7,7 +7,7 @@ use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
 /**
  * @MongoDB\Document
  */
-class Product
+class Blog
 {
  	
  	 /**
@@ -16,12 +16,14 @@ class Product
     protected $id;
 
     /**
+     * @MongoDB\Entity(repositoryClass="Mypro\symBundle\Entity\RegisterRepository")
      * @MongoDB\Field(type="string")
      */
     protected $name;
 
     /**
-     * @MongoDB\Field(type="float")
+     * @MongoDB\Field(type="int")
      */
-    protected $price;
+    protected $comments;
+
 }

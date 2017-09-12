@@ -7,7 +7,7 @@ use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
 /**
  * @MongoDB\Document
  */
-class Product
+class Blog
 {
  	
  	 /**
@@ -21,9 +21,10 @@ class Product
     protected $name;
 
     /**
-     * @MongoDB\Field(type="float")
+     * @MongoDB\Field(type="int")
      */
-    protected $price;
+    protected $comments;
+
 
     /**
      * Get id
@@ -58,24 +59,24 @@ class Product
     }
 
     /**
-     * Set price
+     * Set comments
      *
-     * @param float $price
+     * @param int $comments
      * @return $this
      */
-    public function setPrice($price)
+    public function setComments($comments)
     {
-        $this->price = $price;
+        $this->comments = $comments;
         return $this;
     }
 
     /**
-     * Get price
+     * Get comments
      *
-     * @return float $price
+     * @return int $comments
      */
-    public function getPrice()
+    public function getComments()
     {
-        return $this->price;
+        return $this->comments;
     }
 }

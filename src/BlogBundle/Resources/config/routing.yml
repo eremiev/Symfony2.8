@@ -1,0 +1,18 @@
+index:
+    path:     /
+    defaults: { _controller: BlogBundle:Blog:index }
+create:
+    path:     /create
+    defaults: { _controller: BlogBundle:Blog:create }
+store:
+    path:     /store
+    defaults: { _controller: BlogBundle:Blog:store } 
+show:
+    path:     /{name}
+    defaults: { _controller: BlogBundle:Blog:show } 
+update:
+    path:     /update
+    defaults: { _controller: BlogBundle:Blog:store } 
+delete:
+    path:     /delete
+    defaults: { _controller: BlogBundle:Blog:delete } 

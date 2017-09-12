@@ -1,0 +1,29 @@
+<?php
+
+namespace BlogBundle\Document;
+
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
+
+/**
+ * @MongoDB\Document
+ */
+class Blog
+{
+ 	
+ 	 /**
+     * @MongoDB\Id
+     */
+    protected $id;
+
+    /**
+     * @MongoDB\Entity(repositoryClass="Mypro\symBundle\Entity\RegisterRepository")
+     * @MongoDB\Field(type="string")
+     */
+    protected $name;
+
+    /**
+     * @MongoDB\Field(type="int")
+     */
+    protected $comments;
+
+}

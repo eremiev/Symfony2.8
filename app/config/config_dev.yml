@@ -32,3 +32,16 @@ monolog:
 
 #swiftmailer:
 #    delivery_addresses: ['me@example.com']
+
+doctrine_mongodb:
+    default_database: manager
+    default_connection: default
+    default_document_manager: default
+    connections:
+        default:
+            server: mongodb://admin:1$g6Mt256@localhost:27017/manager
+    document_managers:
+        default:
+            database: manager
+            mappings:
+              #  UsersManagerBundle: ~

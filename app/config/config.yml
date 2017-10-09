@@ -36,15 +36,6 @@ twig:
     strict_variables: '%kernel.debug%'
 
 # Doctrine Configuration
-doctrine_mongodb:
-    connections:
-        default:
-            server: "%mongodb_server%"
-            options: {}
-    default_database: test_database
-    document_managers:
-        default:
-            auto_mapping: true
             
 # doctrine:
 #     dbal:

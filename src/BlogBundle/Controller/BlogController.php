@@ -34,6 +34,6 @@ class BlogController extends Controller
 	    $dm->flush();
 
 	    return new Response('Created product id '.$blog->getId());
-        ));
+
     }
 }

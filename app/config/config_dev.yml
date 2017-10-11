@@ -21,14 +21,21 @@ monolog:
         console:
             type: console
             channels: ['!event', '!doctrine']
-        # uncomment to get logging in your browser
-        # you may have to allow bigger header sizes in your Web server configuration
-        #firephp:
-        #    type: firephp
-        #    level: info
-        #chromephp:
-        #    type: chromephp
-        #    level: info
 
-#swiftmailer:
-#    delivery_addresses: ['me@example.com']
+# Doctrine Configuration
+doctrine_mongodb:
+    default_database: locations
+    default_connection: default
+    default_document_manager: default
+    connections:
+        default:
+            server: mongodb://admin:1$g6Mt256@localhost:27017/Symfony
+    document_managers:
+        default:
+            database: Symfony
+            mappings:
+#                ArticlesBundle: ~
+#                PartnersBundle: ~
+#                ProductsBundle: ~
+#                PlatformsBundle: ~
+#                ResourcesBundle: ~
